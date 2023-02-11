@@ -1,0 +1,14 @@
+import time
+
+def timer():
+    start = input('Type "start" to start the timer: ').lower()
+    if start == 'start':
+        initial_time = time.time()
+
+    stop = input('Type "stop" to stop the timer: ').lower()
+    if stop == 'stop':
+        end_time = time.time()
+        secs_passed = end_time - initial_time
+        print(f'{secs_passed} seconds have passed since you started the timer!')
+
+timer()
